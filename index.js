@@ -71,10 +71,23 @@ const huina = [
 // // gdflsj.reduce()
 // console.log(rest (huina))
 
-//расчитать расход денег на километраж учитывая
-//цена топлива, расход,дистанция
+// //расчитать расход денег на километраж учитывая
+// //цена топлива, расход,дистанция
 
-const value = (CostFuel, FuelPerKm, distance) => {
-    return 'В общем выходит ' + FuelPerKm / 100 * distance * CostFuel + ' гривен'
+// const value = (CostFuel, FuelPerKm, distance) => {
+//     return 'В общем выходит ' + FuelPerKm / 100 * distance * CostFuel + ' гривен'
+// }
+// console.log(value(40, 13, 250))
+
+
+const stringer = 'Я пошёл НАхуй, потомУ что не любою ЧЛены'
+
+const isUp = (arg, index) => {
+    return arg[index].toUpperCase() === arg.charAt(index)
 }
-console.log(value(40, 13, 250))
+console.log(isUp(stringer, 6))
+
+
+
+
+
