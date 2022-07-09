@@ -1,5 +1,7 @@
-const str = "вишня, груша, слива, груша"
-const deleteFirstOccurrence = (strin, strinGap) =>{
-    return  strin.replace((strinGap + ', '), '' )
+const pathname = "/home/user/dir/file.txt"
+const getFileNameByPatch = (pathname) =>{
+    return  pathname.split('/').pop()
+    
 }
-console.log(deleteFirstOccurrence(str, 'груша'))
+
+console.log(getFileNameByPatch(pathname))
