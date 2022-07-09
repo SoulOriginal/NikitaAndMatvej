@@ -1,7 +1,7 @@
-var str = "вишня, груша, слива, груша";
+var pathname = "/home/user/dir/file.txt";
 
-function delete_first_occurrence(str, subst) {
-    return str.replace(subst,'hui')
+const path = (pathname) => {
+    return pathname.split("/").pop()
 };
 
-console.log (delete_first_occurrence(str, 'груша')); // 'вишня, слива, груша'
+console.log(path(pathname))
