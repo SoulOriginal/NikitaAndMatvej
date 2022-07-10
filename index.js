@@ -1,7 +1,25 @@
-const pathname = "/home/user/dir/file.txt"
-const getFileNameByPatch = (pathname) =>{
-    return  pathname.split('/').pop()
-    
-}
+const changes = [
+  "Количество смен (День)",
+  "Количество смен (Ночь)",
+  "Работа за (День)",
+  "Работа за (Ночь)",
+  "Общее количество смен",
+];
+const enumChanges = {
+  morning: "(День)",
+  night: "(Ночь)",
+};
 
-console.log(getFileNameByPatch(pathname))
+const changesFilter = (arg1, arg2) => {
+    return arg2.filter((element)=>element.includes(enumChanges[arg1]) )
+};
+
+console.log(changesFilter('night', changes))
+
+
+
+
+
+// const lineContainsChanges = (string) =>{
+//     if(!string.includes('(')) return false
+// }
